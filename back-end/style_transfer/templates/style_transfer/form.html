@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+	<div>
+		<form action="./" method="post" enctype="multipart/form-data">{% csrf_token %}
+			<fieldset>
+				<label>id : </label><input name="id" type="text" /><br />
+				<label>id_number : </label><input name="id_name" type="text" /><br />
+				<label>content_image : </label><input name="content_image" type="file" /><br />
+				<label>content_weight : </label><input name="content_weight" type="number" /><br />
+				<label>style_image : </label><input name="style_image" type="file" /><br />
+				<label>style_weight : </label><input name="style_weight" type="number" /><br />
+				<label>variation_weight : </label><input name="variation_weight" type="number" /><br />
+				<label>learning_rate : </label><input name="learning_rate" type="number" /><br />
+				<label>transfer_epoch : </label><input name="transfer_epoch" type="number" /><br />
+				<label>transfer_image : </label><input name="transfer_image" type="file" /><br />
+				<input type="submit" value="Submit" />
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
